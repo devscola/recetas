@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 'Ensaladilla Rusa'
+  created_at: <%= 10.minutes.ago %>
+
+two:
+  title: 'Puré de verduras'
+  created_at: <%= 10.minutes.ago %>
+
+three:
+  title: 'Taboulé con calabaza'
+  created_at: <%= 10.minutes.ago %>
+
+four:
+  title: 'Ternera a la cerveza'
+  created_at: <%= 10.minutes.ago %>
+
+five:
+  title: 'Pollo a la coca-cola'
+  created_at: <%= 10.minutes.ago %>
+
+six:
+  title: 'Espaghettis carbonara'
+  created_at: <%= 10.minutes.ago %>
+
+seven:
+  title: 'Pizza margarita'
+  created_at: <%= 2.months.ago %>
+
+eight:
+  title: 'Bacalao al pil-pil'
+  created_at: <%= 3.weeks.ago %>
+
+nine:
+  title: 'Pollo al chilindrón'
+  created_at: <%= 8.hours.ago %>
+
+ten:
+  title: 'Pulpo a la gallega'
+  created_at: <%= 3.years.ago %>
+
+eleven:
+  title: 'Tortilla de patata'
+  created_at: <%= 4.days.ago %>
+
+twelve:
+  title: 'Fabada asturiana'
+  created_at: <%= 45.minutes.ago %>

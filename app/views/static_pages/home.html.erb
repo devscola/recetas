@@ -1,0 +1,13 @@
+<h1>Recetame App</h1>
+
+<h2>Aquí están las últimas 10 recetas</h2>
+
+<ul id="recipes" style= 'list-style: none'>
+  <% @recipes.each do |recipe| %>
+
+    <li class="home_recipe"><%= recipe.title %></li>
+
+  <% end %>
+</ul>
+<%= link_to "Cookpad: para inspirarnos un poquillo", 'https://cookpad.com/us?via=jp' %>
+<p>Find me in app/views/static_pages/home.html.erb</p>
