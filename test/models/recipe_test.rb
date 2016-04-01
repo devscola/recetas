@@ -2,6 +2,28 @@ require 'test_helper'
 
 class RecipeTest < ActiveSupport::TestCase
 
+  def setup
+    @recipe = Recipe.new(title: "Cocochas")
+  end
+
+  test "title should be present" do
+    @recipe.title = "    "
+
+    assert_not @recipe.valid?
+  end
+
+  test "title should not be too short" do
+    @recipe.title = "a"*9
+
+    assert_not @recipe.valid?
+  end
+
+  test "title should not be too long" do
+    @recipe.title = "a"*71
+
+    assert_not @recipe.valid?
+  end
+
   test "last_ten should have 10 items" do
     if Recipe.all.size >= 10
       assert_equal Recipe.last_ten.size, 10
