@@ -19,3 +19,11 @@ recipes = Recipe.create([{ title: 'Ensaladilla Rusa' },
                          { title: 'Pulpo a la gallega' },
                          { title: 'Tortilla de patata' },
                          { title: 'Fabada asturiana' }])
+
+books = Book.create([{ title: 'Recetas de pollo' },
+                     { title: 'Recetas de la abuela' },
+                     { title: 'Recetas españolas' },
+                     { title: "Arguiñano's Style" },
+                     { title: 'Exquisiteces' },
+                     { title: 'Dulces' },
+                     { title: 'Todo Patatas' }])

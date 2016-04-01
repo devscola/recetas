@@ -9,5 +9,15 @@
 
   <% end %>
 </ul>
+
+<h2>Y aquí los últimos 5 "libros"</h2>
+
+<ul id="books" style= 'list-style: none'>
+  <% @books.each do |book| %>
+
+   <li class="home_book"><%= book.title %></li>
+   <% end %>
+</ul>
+
 <%= link_to "Cookpad: para inspirarnos un poquillo", 'https://cookpad.com/us?via=jp' %>
 <p>Find me in app/views/static_pages/home.html.erb</p>
