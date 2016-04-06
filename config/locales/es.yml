@@ -21,14 +21,24 @@
 
 es:
   flash:
+    book:
+      created: "Su libro se ha creado"
     recipe:
       created: "Su receta se ha creado"
   button:
+    book:
+      create: "Crear libro"
     recipe:
       create: "Crear receta"
   activerecord:
     errors:
       models:
+        book:
+          attributes:
+            title:
+              too_short: "Titulo demasiado corto"
+              too_long: "Titulo demasiado largo"
+              blank: "Titulo en blanco, inserta un titulo"
         recipe:
           attributes:
             title:
@@ -40,14 +50,21 @@ es:
         too_long: "Demasiado largo"
         blank: "Escribe algo"
     models:
+      book:
+        one: "Libro"
+        other: "Libros"
       recipe:
         one: "Receta"
         other: "Recetas"
     attributes:
+      book:
+        title: "Nombre del Libro"
       recipe:
-        title: "Nombre Receta"
+        title: "Nombre de la Receta"
   helpers:
     placeholder:
+      book:
+        title: "Escribe un título"
       recipe:
         title: "Escribe un título"
     submit:
